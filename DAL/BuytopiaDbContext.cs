@@ -1,6 +1,7 @@
 ﻿namespace Buytopia.DAL
+{ 
 
-    using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 public class BuytopiaDbContext : DbContext
 {
@@ -11,9 +12,6 @@ public class BuytopiaDbContext : DbContext
     }
 
     //Aggiungere relazioni entita tabelle
-         
+
 }
-
-
-
 }
