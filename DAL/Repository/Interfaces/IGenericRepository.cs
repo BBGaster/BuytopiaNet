@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Buytopia.BLL.Service.Repository.Interfaces
+namespace Buytopia.DAL.Repository.Interfaces
 {
     interface IGenericRepository<T> where T : class
     {

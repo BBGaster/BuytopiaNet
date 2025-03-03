@@ -1,5 +1,5 @@
-﻿using Buytopia.BLL.Service.Repository.Interfaces;
-using Buytopia.DAL;
+﻿using Buytopia.DAL;
+using Buytopia.DAL.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Buytopia.BLL.Service.Repository
+namespace Buytopia.DAL.Repository
 {
     class GenericRepository<T> : IGenericRepository<T> where T : class
     {
