@@ -29,4 +29,8 @@
     <ProjectReference Include="..\DAL\Buytopia.DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>
