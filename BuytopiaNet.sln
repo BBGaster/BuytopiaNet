@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buytopia.PL", "BuytopiaNet\Buytopia.PL.csproj", "{6CC82DB8-B83C-4DDC-A62B-4E6B7120EB86}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640} = {7B2C4C19-72FA-4376-84E9-C6D37599E640}
+		{90BDC399-A7B9-4069-B06F-39FDB983925A} = {90BDC399-A7B9-4069-B06F-39FDB983925A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buytopia.DAL", "DAL\Buytopia.DAL.csproj", "{7B2C4C19-72FA-4376-84E9-C6D37599E640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buytopia.BLL", "BLL\Buytopia.BLL.csproj", "{90BDC399-A7B9-4069-B06F-39FDB983925A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640} = {7B2C4C19-72FA-4376-84E9-C6D37599E640}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CC82DB8-B83C-4DDC-A62B-4E6B7120EB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC82DB8-B83C-4DDC-A62B-4E6B7120EB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC82DB8-B83C-4DDC-A62B-4E6B7120EB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC82DB8-B83C-4DDC-A62B-4E6B7120EB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2C4C19-72FA-4376-84E9-C6D37599E640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BDC399-A7B9-4069-B06F-39FDB983925A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BDC399-A7B9-4069-B06F-39FDB983925A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BDC399-A7B9-4069-B06F-39FDB983925A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BDC399-A7B9-4069-B06F-39FDB983925A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85DA1536-724F-49F8-BEE0-86E590E333A8}
+	EndGlobalSection
+EndGlobal
