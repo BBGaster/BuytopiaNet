@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Entities
 {
-    class Product
+    public class Product
     {
         [Key]
         public int ID { get; set; }
@@ -17,10 +17,14 @@ namespace Buytopia.DAL.Entities
         public int Price { get; set; }
         public string ImageUrl { get; set; }
         public bool IsAvailable { get; set; }
+
+
         [ForeignKey("CategoryID")]
         public int CategoryId { get; set; }
-
         public virtual Category? Category { get; set; }
+
+        public ICollection<Order> Orders;
+
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public DateTime? DeletedAt { get; set; }

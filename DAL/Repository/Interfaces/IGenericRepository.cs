@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Repository.Interfaces
 {
-    interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
-        bool Create(T entity);
-        T Update(T entity);
+        bool Add(TEntity entity);
+        TEntity Update(TEntity entity);
         bool Delete(int key);
-        IList<T> GetAll();
-        T GetById(int id);
+        IList<TEntity> GetAll();
+        TEntity GetById(int id);
         void SaveChanges();
     }
 }
