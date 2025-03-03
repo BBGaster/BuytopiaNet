@@ -1,6 +1,6 @@
 
 using Buytopia.DAL;
-using Buytopia.PL;
+using Buytopia.PL.Configuration;
 using Microsoft.EntityFrameworkCore;
 
 namespace BuytopiaNet

@@ -2,7 +2,7 @@
 using Buytopia.DAL.Entities;
 using Buytopia.DAL.entityes;
 
-namespace Buytopia.PL
+namespace Buytopia.PL.Configuration
 {
     public class AutoMapperConfiguration : Profile
     {
