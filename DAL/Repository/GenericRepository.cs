@@ -9,24 +9,24 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Repository
 {
-    class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
         private readonly BuytopiaDbContext _context;
-        private readonly DbSet<T> _dbSet;
+        private readonly DbSet<TEntity> _dbSet;
 
         public GenericRepository(BuytopiaDbContext _context)
         {
             this._context = _context;
-            _dbSet = _context.Set<T>();
+            _dbSet = _context.Set<TEntity>();
         }
 
-        public bool Create(T entity)
+        public bool Add(TEntity entity)
         {
             _dbSet.Add(entity);
             return _context.SaveChanges() > 0;
         }
 
-        public T Update(T entity)
+        public TEntity Update(TEntity entity)
         {
             _dbSet.Attach(entity);
             _context.Entry(entity).State = EntityState.Modified;
@@ -36,7 +36,7 @@ namespace Buytopia.DAL.Repository
 
         public bool Delete(int key)
         {
-            T entity = _dbSet.Find(key);
+            TEntity entity = _dbSet.Find(key);
             if (entity == null)
             {
                 return false;
@@ -47,12 +47,12 @@ namespace Buytopia.DAL.Repository
             return _context.SaveChanges() > 0;
         }
 
-        public IList<T> GetAll()
+        public IList<TEntity> GetAll()
         {
             return _dbSet.ToList();
         }
 
-        public T GetById(int id)
+        public TEntity GetById(int id)
         {
             return _dbSet.Find(id);
         }

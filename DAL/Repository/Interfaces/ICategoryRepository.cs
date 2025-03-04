@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Repository.Interfaces
 {
-    interface ICategoryRepository : IGenericRepository<Category>
+    public interface ICategoryRepository : IGenericRepository<Category>
     {
     }
 }

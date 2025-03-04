@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Entities
 {
-    class Order
+    public class Order
     {
         [Key]
         public int ID { get; set; }
@@ -18,6 +19,11 @@ namespace Buytopia.DAL.Entities
         public int TotalPrice { get; set; }
 
         public int UserId { get; set; }
+        public virtual User? User { get; set; }
+
+
+        public ICollection<Product> Products;
+
 
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }

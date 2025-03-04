@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Buytopia.DAL.Repository
 {
-    class OrderRepository : GenericRepository<Order>, IOrderRepository
+    public class OrderRepository : GenericRepository<Order>, IOrderRepository
     {
         public OrderRepository(BuytopiaDbContext _context) : base(_context)
         {

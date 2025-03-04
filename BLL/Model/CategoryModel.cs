@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Buytopia.BLL.Model
 {
-    class CategoryModel
+    public class CategoryModel
     {
         public int ID { get; set; }
         public required string Name { get; set; }
